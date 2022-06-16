@@ -15,4 +15,5 @@ import matplotlib.pyplot as plt<br>
 img=mping.imread('leaf1.jpg')<br>
 plt.imshow(img) <br>
 
- output:<br>
+ output:<br>![image](https://user-images.githubusercontent.com/87934584/174043139-fe957ed6-32c4-4784-a3e4-e6e537c6ed57.png)
+
