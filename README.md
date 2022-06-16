@@ -107,4 +107,8 @@ ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)<br>
 cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+output:<br>![image](https://user-images.githubusercontent.com/87934584/174053635-551b6858-1c66-46b5-8e8c-adeade67bc8c.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/174053757-83ee3766-1ddb-4047-94d1-ed86853f8a71.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/174053879-82cc481a-c5ff-4c50-8abd-ab50bf4d3104.png)
+
 
