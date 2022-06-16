@@ -63,5 +63,22 @@ plt.imshow(img)<br>
 plt.show()<br>
 output:<br>![image](https://user-images.githubusercontent.com/87934584/174047092-6dc17c6e-5059-46d6-a2bf-a55ab868b90b.png)<br>![image](https://user-images.githubusercontent.com/87934584/174047235-e777a1c4-ad6b-4d76-8c88-4952e937829e.png)<br>![image](https://user-images.githubusercontent.com/87934584/174047345-e8d61201-a6f0-4693-bd97-4b182acec4f9.png)<br>![image](https://user-images.githubusercontent.com/87934584/174047481-c564f4de-28e7-4d4d-88eb-6c43887554f9.png)
 
+7.write a program to display the image attributes?<br>
+from PIL import Image<br>
+image=Image.open('tree.jpg')<br>
+print("filename:",image.filename)<br>
+print("format:",image.format)<br>
+print("mode:",image.mode)<br>
+print("size:",image.size)<br>
+print("width:",image.width)<br>
+print("height:",image.height)<br>
+image.close()<br>
+
+output:<br>filename: tree.jpg<br>
+format: JPEG<br>
+mode: RGB<br>
+size: (1334, 888)<br>
+width: 1334<br>
+height: 888<br>
 
 
