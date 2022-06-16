@@ -17,3 +17,12 @@ plt.imshow(img) <br>
 
  output:<br>![image](https://user-images.githubusercontent.com/87934584/174043139-fe957ed6-32c4-4784-a3e4-e6e537c6ed57.png)
 
+3.Develop a program to perform Linmear tranforamtion rotation?<br>
+from PIL import Image<br>
+img=Image.open('butterfly.jpg')<br>
+img=img.rotate(180)<br>
+img.show()<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+<br>
+output:<br>![image](https://user-images.githubusercontent.com/87934584/174043984-80c0af26-5dab-48ba-8940-19fda9ed5397.png)
