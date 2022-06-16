@@ -95,4 +95,16 @@ Resized image length width (160, 150, 3)<br>Original size<br>
 Resized<br>
 ![image](https://user-images.githubusercontent.com/87934584/174052666-8dc4911b-f512-4b01-9e09-498d7e1a6b2b.png)
 
+9.
+/*raed the image file*/
+img=cv2.imread('flower3.jpg')
+cv2.imshow("RGB",img)
+/*gray scale*/
+img=cv2.imread('flower3.jpg',0)
+cv2.imshow("Gray",img)
+/*binary image*/
+ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.imshow("Binary",bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
