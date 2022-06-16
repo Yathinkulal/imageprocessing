@@ -79,4 +79,20 @@ size: (1334, 888)<br>
 width: 1334<br>
 height: 888<br>
 
+8.Resize the original image?<br>
+import cv2<br>
+img=cv2.imread('flower3.jpg')<br>
+print('original image length width',img.shape)<br>
+cv2.imshow('original image',img)<br>
+imgresize=cv2.resize(img,(150,160))<br>
+cv2.imshow('resized image',imgresize)<br>
+print('Resized image length width',imgresize.shape)<br>
+cv2.waitKey(0)<br>
+
+output:<br>original image length width (720, 480, 3)<br>
+Resized image length width (160, 150, 3)<br>Original size<br>
+![image](https://user-images.githubusercontent.com/87934584/174052544-647bd975-9c97-4d0d-94f0-9d71f2239edb.png)<br>
+Resized<br>
+![image](https://user-images.githubusercontent.com/87934584/174052666-8dc4911b-f512-4b01-9e09-498d7e1a6b2b.png)
+
 
