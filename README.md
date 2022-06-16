@@ -29,10 +29,8 @@ output:<br>![image](https://user-images.githubusercontent.com/87934584/174043984
 
 4.Devlop a program to convert color string to RGB color value?<br>
 from PIL import ImageColor<br>
-# using getrgb for yellow<br>
 img1=ImageColor.getrgb("yellow")<br>
 print(img1)<br>
-# using getrgb for red<br>
 img2=ImageColor.getrgb("red")<br>
 print(img2)<br>
 output:<br>
