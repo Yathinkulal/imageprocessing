@@ -26,3 +26,21 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 <br>
 output:<br>![image](https://user-images.githubusercontent.com/87934584/174043984-80c0af26-5dab-48ba-8940-19fda9ed5397.png)
+
+4.Devlop a program to convert color string to RGB color value?<br>
+from PIL import ImageColor<br>
+# using getrgb for yellow<br>
+img1=ImageColor.getrgb("yellow")<br>
+print(img1)<br>
+# using getrgb for red<br>
+img2=ImageColor.getrgb("red")<br>
+print(img2)<br>
+output:<br>
+(255, 255, 0)<br>
+(255, 0, 0)<br>
+
+5.write program to convert image using colors?<br>
+from PIL import Image<br>
+img=Image.new('RGB',(200,400),(255,255,0))<br>
+img.show()<br>
+output:<br>![image](https://user-images.githubusercontent.com/87934584/174045340-b68e99d2-efd1-448f-82fa-5a60ba0f7d0c.png)
