@@ -158,9 +158,12 @@ plt.show()<br>
 */saving the output image/*<br>
 cv2.imwrite('output.jpg',fimg4)<br>
 output:<br>
-![image](https://user-images.githubusercontent.com/87934584/175269198-52ead221-e121-4fe0-ba85-09751b60abc0.png)<br>
-![image](https://user-images.githubusercontent.com/87934584/175271054-ab7b624d-074e-4e92-9c13-315185689fc3.png)<br>
-![image](https://user-images.githubusercontent.com/87934584/175271256-6c5490fc-eeb7-4ec8-965e-4a0cc0a5d18d.png)
+![image](https://user-images.githubusercontent.com/87934584/175277477-3e87a4cf-031e-4283-8e10-ce7043cf7b94.png)
+<br>
+![image](https://user-images.githubusercontent.com/87934584/175277567-05318f3a-8ca8-41f4-9a80-e2281f9429f0.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175277618-95bed0a2-fb71-424a-acae-24e245b5f218.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175277676-573d6804-5892-414f-b67c-74302224c2a0.png)<br>
+
 
 13.Develop the program to change the image into different color?<br>
 import cv2<br>
