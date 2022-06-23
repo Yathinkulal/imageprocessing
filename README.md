@@ -123,39 +123,41 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)
 
 12.Write a program to perform arithmatic operations on images?
-import cv2
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
 
-*/reading imsge files/*
-img1=cv2.imread('website.jpg')
-img2=cv2.imread('m.jpg')
+*/reading imsge files/*<br>
+img1=cv2.imread('website.jpg')<br>
+img2=cv2.imread('m.jpg')<br>
 
-*/applying NumPy addition on images/*
-fimg1=img1+img2
-plt.imshow(fimg1)
-plt.show()
+*/applying NumPy addition on images/*<br>
+fimg1=img1+img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
 
-*/saving the otput image/*
-cv2.imwrite('output.jpg',fimg1)
-fimg2=img1-img2
-plt.imshow(fimg2)
-plt.show()
+*/saving the otput image/*<br>
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2=img1-img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
 
 
-*/saving the output image/*
-cv2.imwrite('output.jpg',fimg2)
-fimg3=img1*img2
-plt.imshow(fimg3)
-plt.show()
+*/saving the output image/*<br>
+cv2.imwrite('output.jpg',fimg2)<br>
+fimg3=img1*img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
 
-*/saving the output image/*
-cv2.imwrite('output.jpg',fimg3)
-fimg4 = img1 / img2
-plt.imshow(fimg4)
-plt.show()
+*/saving the output image/*<br>
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4 = img1 / img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
 
-*/saving the output image/*
-cv2.imwrite('output.jpg',fimg4)
+*/saving the output image/*<br>
+cv2.imwrite('output.jpg',fimg4)<br>
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/175269198-52ead221-e121-4fe0-ba85-09751b60abc0.png)
 
 
