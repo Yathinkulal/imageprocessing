@@ -158,6 +158,8 @@ plt.show()<br>
 */saving the output image/*<br>
 cv2.imwrite('output.jpg',fimg4)<br>
 output:<br>
-![image](https://user-images.githubusercontent.com/87934584/175269198-52ead221-e121-4fe0-ba85-09751b60abc0.png)
+![image](https://user-images.githubusercontent.com/87934584/175269198-52ead221-e121-4fe0-ba85-09751b60abc0.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175271054-ab7b624d-074e-4e92-9c13-315185689fc3.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175271256-6c5490fc-eeb7-4ec8-965e-4a0cc0a5d18d.png)
 
 
