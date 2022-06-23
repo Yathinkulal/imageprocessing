@@ -120,7 +120,64 @@ plt.imshow(image)<br>
 plt.show()<br>
 
 output:<br>
-![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)
+![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)<br>
+11.
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
+img=mpimg.imread('images.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+
+![image](https://user-images.githubusercontent.com/87934584/175288897-b09f70dc-787b-4b19-beb5-aa9b54cb04cb.png)<br>
+
+hsv_img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+light_orange=(0,50,50)<br>
+dark_orange=(10,255,255)<br>
+mask=cv2.inRange(hsv_img,light_orange,dark_orange)<br>
+result=cv2.bitwise_and(img,img,mask=mask)<br>
+plt.subplot(2,1,1)<br>
+plt.imshow(mask,cmap="gray")<br>
+plt.subplot(2,1,2)<br>
+plt.imshow(result)<br>
+plt.show()<br>
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/175289105-10541db3-c382-4f66-8dab-a73fbf23faa5.png)
+
+![image](https://user-images.githubusercontent.com/87934584/175289116-33e1fd8a-8b01-4389-81ff-299755b1ebdf.png)
+light_white=(0,0,200)
+dark_white=(145,60,255)
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)
+result_white=cv2.bitwise_and(img,img,mask=mask_white)
+plt.subplot(1,2,1)
+plt.imshow(mask_white,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result_white)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/87934584/175289164-cc631749-91e1-4fc6-9ad2-03f093de4ab2.png)
+![image](https://user-images.githubusercontent.com/87934584/175289196-4e81d1dc-b5c5-44d5-8545-7fbc9d6817f7.png)
+final_mask=mask+mask_white
+final_result=cv2.bitwise_and(img,img,mask=final_mask)
+plt.subplot(1,2,1)
+plt.imshow(final_mask,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(final_result)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/87934584/175289261-eab81fc0-4e8e-4266-9691-6410cbccc286.png)
+![image](https://user-images.githubusercontent.com/87934584/175289283-ab0a0a56-c9b8-4d92-965b-ef3fa899d725.png)
+blur=cv2.GaussianBlur(final_result,(7,7),0)
+plt.imshow(blur)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/87934584/175289334-3e3334c1-60fa-440b-8b80-ac5b9f636260.png)
+
+
+
+
+
+
 
 12.Write a program to perform arithmatic operations on images?<br>
 import cv2<br>
