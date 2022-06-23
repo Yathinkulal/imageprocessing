@@ -128,8 +128,9 @@ import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
 
 */reading imsge files/*<br>
-img1=cv2.imread('website.jpg')<br>
-img2=cv2.imread('m.jpg')<br>
+*/image should be in same size but different img/*
+img1=cv2.imread('goat.jpg')<br>
+img2=cv2.imread('king.jpg')<br>
 
 */applying NumPy addition on images/*<br>
 fimg1=img1+img2<br>
@@ -167,7 +168,7 @@ output:<br>
 
 13.Develop the program to change the image into different color?<br>
 import cv2<br>
-img=cv2.imread("flower.jpg")<br>
+img=cv2.imread("car.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
 lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
