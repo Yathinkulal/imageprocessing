@@ -111,4 +111,15 @@ output:<br>![image](https://user-images.githubusercontent.com/87934584/174053635
 ![image](https://user-images.githubusercontent.com/87934584/174053757-83ee3766-1ddb-4047-94d1-ed86853f8a71.png)<br>
 ![image](https://user-images.githubusercontent.com/87934584/174053879-82cc481a-c5ff-4c50-8abd-ab50bf4d3104.png)
 
+10.Develop a program to readimage using URL?<br>
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+url='https://www.alfredapp.com/blog/tips-and-tricks/tiny-png-workflow-compress-images/tinypng-panda.png'<br>
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
+
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)
+
 
