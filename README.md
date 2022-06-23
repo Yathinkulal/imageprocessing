@@ -201,4 +201,4 @@ c.waitKey(0)<br>
 Output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175275363-32b08489-6317-4b74-8bc1-ff2d4261f2fd.png)
 
-![image](https://user-images.githubusercontent.com/87934584/175276717-a560b150-a378-4293-8ccf-87a5342dd381.png)
+
