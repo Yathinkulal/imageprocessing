@@ -122,4 +122,40 @@ plt.show()<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)
 
+12.Write a program to perform arithmatic operations on images?
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+
+*/reading imsge files/*
+img1=cv2.imread('website.jpg')
+img2=cv2.imread('m.jpg')
+
+*/applying NumPy addition on images/*
+fimg1=img1+img2
+plt.imshow(fimg1)
+plt.show()
+
+*/saving the otput image/*
+cv2.imwrite('output.jpg',fimg1)
+fimg2=img1-img2
+plt.imshow(fimg2)
+plt.show()
+
+
+*/saving the output image/*
+cv2.imwrite('output.jpg',fimg2)
+fimg3=img1*img2
+plt.imshow(fimg3)
+plt.show()
+
+*/saving the output image/*
+cv2.imwrite('output.jpg',fimg3)
+fimg4 = img1 / img2
+plt.imshow(fimg4)
+plt.show()
+
+*/saving the output image/*
+cv2.imwrite('output.jpg',fimg4)
+
 
