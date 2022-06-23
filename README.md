@@ -162,4 +162,25 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175271054-ab7b624d-074e-4e92-9c13-315185689fc3.png)<br>
 ![image](https://user-images.githubusercontent.com/87934584/175271256-6c5490fc-eeb7-4ec8-965e-4a0cc0a5d18d.png)
 
-
+13.Develop the program to change the image into different color?<br>
+import cv2<br>
+img=cv2.imread("flower.jpg")<br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
+cv2.imshow("GRAY image",gray)<br>
+cv2.imshow("HSV image",hsv)<br>
+cv2.imshow("LAB image",lab)<br>
+cv2.imshow("HLS image",hls)<br>
+cv2.imshow("YUV image",yuv)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+Output:<br>
+![image](https://user-images.githubusercontent.com/87934584/175274437-7b2f1867-0376-4aeb-9952-d4d3ae43390c.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175274546-c1a28c63-5fb3-40c7-9d1c-f154104a4bf3.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175274629-e9b4f270-323a-497e-8455-eb20076ca287.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175274748-e60c136d-7c75-4e3d-881f-92764fb0243d.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/175274893-754300ef-2708-493a-9cff-1ab252328f5a.png)<br>
+14.Program to create an image using 2D array?
