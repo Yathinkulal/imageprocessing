@@ -122,7 +122,7 @@ plt.show()<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175267752-1bb4a140-4b67-4c3b-a490-0dd6a8ab7388.png)
 
-12.Write a program to perform arithmatic operations on images?
+12.Write a program to perform arithmatic operations on images?<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
