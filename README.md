@@ -279,7 +279,30 @@ plt.imshow(bitwiseNot_img1)<br>
 plt.subplot(155)<br>
 plt.imshow(bitwiseNot_img2)<br>
 cv2.waitKey(0)<br>
-output:![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)
+output:![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)<br>
+16.Blurring image?<br>
+import cv2<br>
+import numpy as np<br>
+
+image=cv2.imread('pand.jpg')<br>
+cv2.imshow('original image',image)<br>
+
+*/Gaussian blur<br>
+Gaussian=cv2.GaussianBlur(image,(7,7),0)<br>
+cv2.imshow('Gaussian Blurring',Gaussian)<br>
+
+
+*/Median Blur<br>
+median=cv2.medianBlur(image,5)<br>
+cv2.imshow('MediaN Blurring',median)<br>
+
+
+*/Billateral Blur<br>
+bilateral=cv2.bilateralFilter(image,9,75,75)<br>
+cv2.imshow('Bilateral Blurring',bilateral)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+
 
 
 
