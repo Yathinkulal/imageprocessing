@@ -143,7 +143,6 @@ plt.imshow(result)<br>
 plt.show()<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175289105-10541db3-c382-4f66-8dab-a73fbf23faa5.png)
-
 ![image](https://user-images.githubusercontent.com/87934584/175289116-33e1fd8a-8b01-4389-81ff-299755b1ebdf.png)<br>
 light_white=(0,0,200)<br>
 dark_white=(145,60,255)<br>
