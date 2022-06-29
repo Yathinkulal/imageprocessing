@@ -279,7 +279,7 @@ plt.imshow(bitwiseNot_img1)<br>
 plt.subplot(155)<br>
 plt.imshow(bitwiseNot_img2)<br>
 cv2.waitKey(0)<br>
-output:![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)<br>
+output:<br>![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)<br>
 16.Blurring image?<br>
 import cv2<br>
 import numpy as np<br>
@@ -302,9 +302,14 @@ bilateral=cv2.bilateralFilter(image,9,75,75)<br>
 cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/176422929-b5e17c97-6fec-4d7e-937f-aa94a69246ee.png)
 
+![image](https://user-images.githubusercontent.com/87934584/176423387-3e9038a1-30a3-4890-90c9-e878ade379ed.png)
 
+![image](https://user-images.githubusercontent.com/87934584/176423231-fd583b5d-3792-4d02-bfaf-8ec1a231a0e1.png)<br>
 
+![image](https://user-images.githubusercontent.com/87934584/176422811-5f8a3ee0-3a9f-411c-8505-a8140fcfb289.png)
 
 
 
