@@ -311,6 +311,35 @@ output:<br>
 
 ![image](https://user-images.githubusercontent.com/87934584/176422811-5f8a3ee0-3a9f-411c-8505-a8140fcfb289.png)
 
+17.Image Enhancement?<br>
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('pand.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(image)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/176424845-7c3315f0-53a8-4db0-b228-8bdf2adcf282.png)
+![image](https://user-images.githubusercontent.com/87934584/176424920-1ba63638-82be-4028-aa60-7c26b51ebe54.png)
+![image](https://user-images.githubusercontent.com/87934584/176424993-ac049a5b-47d5-459b-b87e-26e51e9c9210.png)
+![image](https://user-images.githubusercontent.com/87934584/176425061-f4f3cdeb-519c-465e-97ab-81a362698339.png)
+![image](https://user-images.githubusercontent.com/87934584/176425182-c9ff2164-c4c4-4514-82b2-99bddd97ff7d.png)
+
+
 
 
 
