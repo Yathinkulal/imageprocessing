@@ -257,4 +257,36 @@ c.waitKey(0)<br>
 Output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/175275363-32b08489-6317-4b74-8bc1-ff2d4261f2fd.png)
 
+15.write program to perform bitwise operation?<br>
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+image1=cv2.imread('mardona.jpg',1)<br>
+image2=cv2.imread('mardona.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
+output:![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)
+![image](https://user-images.githubusercontent.com/87934584/176419837-308f81d9-7978-4d4d-98ba-48c5988180a1.png)
+![image](https://user-images.githubusercontent.com/87934584/176419869-237d3f90-c4b0-463a-adb9-afa18c18060e.png)
+![image](https://user-images.githubusercontent.com/87934584/176419897-5440d9e9-272e-4f4f-a5fb-42ccf0bf7f3b.png)
+![image](https://user-images.githubusercontent.com/87934584/176419927-fce82e4a-294b-4690-8d41-ed3a7e43d192.png)
+
+
+
+
+
 
