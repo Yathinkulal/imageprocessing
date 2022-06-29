@@ -280,10 +280,7 @@ plt.subplot(155)<br>
 plt.imshow(bitwiseNot_img2)<br>
 cv2.waitKey(0)<br>
 output:![image](https://user-images.githubusercontent.com/87934584/176419794-150537e0-33d5-40a0-9d3f-a90f0e6b8c81.png)
-![image](https://user-images.githubusercontent.com/87934584/176419837-308f81d9-7978-4d4d-98ba-48c5988180a1.png)
-![image](https://user-images.githubusercontent.com/87934584/176419869-237d3f90-c4b0-463a-adb9-afa18c18060e.png)
-![image](https://user-images.githubusercontent.com/87934584/176419897-5440d9e9-272e-4f4f-a5fb-42ccf0bf7f3b.png)
-![image](https://user-images.githubusercontent.com/87934584/176419927-fce82e4a-294b-4690-8d41-ed3a7e43d192.png)
+
 
 
 
