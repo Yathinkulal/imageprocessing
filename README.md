@@ -339,6 +339,32 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/176425061-f4f3cdeb-519c-465e-97ab-81a362698339.png)
 ![image](https://user-images.githubusercontent.com/87934584/176425182-c9ff2164-c4c4-4514-82b2-99bddd97ff7d.png)
 
+18.Morphological_operation<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image,ImageEnhance<br>
+img=cv2.imread('mardona.jpg',0)<br>
+ax=plt.subplots(figsize=(20,10))<br>
+kernel=np.ones((5,5),np.uint8)<br>
+opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)<br>
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)<br>
+erosion=cv2.erode(img,kernel,iterations=1)<br>
+dilation=cv2.dilate(img,kernel,iterations=1)<br>
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel)<br>
+plt.subplot(151)<br>
+plt.imshow(opening)<br>
+plt.subplot(152)<br>
+plt.imshow(closing)<br>
+plt.subplot(153)<br>
+plt.imshow(erosion)<br>
+plt.subplot(154)<br>
+plt.imshow(dilation)<br>
+plt.subplot(155)<br>
+plt.imshow(gradient)<br>
+cv2.waitKey(0)<br>
+output:<br>
+![image](https://user-images.githubusercontent.com/87934584/176426007-2731e985-46f2-4920-b34e-8332586675be.png)
 
 
 
