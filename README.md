@@ -17,16 +17,18 @@ cv2.destroyAllWindows()<br>
 if isSaved:<br>
     print('The image is successfully saved')<br>
 
-output:<br>![image](https://user-images.githubusercontent.com/87934584/173816906-e0c7944b-2439-467f-94ec-f31fcef66887.png)<br>
+output: output:<br>![image](https://user-images.githubusercontent.com/87934584/178705842-a27299a7-79be-4dc2-ac82-25986221ff66.png)
+ ![image](https://user-images.githubusercontent.com/87934584/178705947-fa4d6355-967b-44a8-977e-83896ddc348a.png)
 
 2.Develop a program to display yhe image using matplotlib?<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
-img=mping.imread('leaf1.jpg')<br>
+img=mping.imread('dore.jpg')<br>
 plt.imshow(img) <br>
 
- output:<br>![image](https://user-images.githubusercontent.com/87934584/178705842-a27299a7-79be-4dc2-ac82-25986221ff66.png)
- ![image](https://user-images.githubusercontent.com/87934584/178705947-fa4d6355-967b-44a8-977e-83896ddc348a.png)
+ output:<br>![image](https://user-images.githubusercontent.com/87934584/178706651-d8c62934-0866-4be3-8191-8e8688f2928d.png)
+
+
 
 
 
