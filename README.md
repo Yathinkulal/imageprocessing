@@ -1,5 +1,5 @@
 # imageprocessing<br>
-1.      Develop a program to<br>
+1.Develop a program to?<br>
 (i)                Read the image, convert it into grayscale image<br>
 (ii)              write (save) the grayscale image and<br>
 (iii)            display the original image and grayscale image<br>
