@@ -381,6 +381,46 @@ cv2.waitKey(0)<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/87934584/176426007-2731e985-46f2-4920-b34e-8332586675be.png)
 
+19.slicing with background ?<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('dore.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
+
+output:<br>![image](https://user-images.githubusercontent.com/87934584/178711477-8b08ac1d-83ec-4d8c-a478-bd092a3a37ac.png)
+
+20.Graylevel slicing without background?
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('dore.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=0<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing without background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
+
+output:<br>![image](https://user-images.githubusercontent.com/87934584/178711943-dc482981-3b05-4c0a-b650-a160d6c6e34c.png)
+
 
 
 
