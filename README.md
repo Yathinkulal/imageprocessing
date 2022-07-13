@@ -25,7 +25,10 @@ import matplotlib.pyplot as plt<br>
 img=mping.imread('leaf1.jpg')<br>
 plt.imshow(img) <br>
 
- output:<br>![image](https://user-images.githubusercontent.com/87934584/174043139-fe957ed6-32c4-4784-a3e4-e6e537c6ed57.png)
+ output:<br>![image](https://user-images.githubusercontent.com/87934584/178705842-a27299a7-79be-4dc2-ac82-25986221ff66.png)
+ ![image](https://user-images.githubusercontent.com/87934584/178705947-fa4d6355-967b-44a8-977e-83896ddc348a.png)
+
+
 
 3.Develop a program to perform Linmear tranforamtion rotation?<br>
 from PIL import Image<br>
