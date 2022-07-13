@@ -1,11 +1,21 @@
 # imageprocessing
-1.Develop a program   to dispaly grayscale image using read & write operation import cv2 ?<br>
+1.      Develop a program to<br>
+(i)                Read the image, convert it into grayscale image<br>
+(ii)              write (save) the grayscale image and<br>
+(iii)            display the original image and grayscale image<br>
+
+ (Note: To save image to local storage using Python, we use cv2.imwrite() function on OpenCV library <br>
 <br>
-import cv2<br>
-img=cv2.imread('flower.jpg',0)<br>
-cv2.imshow('Image',img)<br>
-cv2.waitKey(0)<br>
-cv2.destroyAllWindows()<br>
+import cv2
+OriginalImg=cv2.imread('free.jpg')
+GrayImg=cv2.imread('free.jpg',0)
+isSaved=cv2.imwrite('E:\yathin\i.jpg',GrayImg)
+cv2.imshow('Display Original image',OriginalImg)
+cv2.imshow('Display Grayscale image',GrayImg)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+if isSaved:
+    print('The image is successfully saved')
 
 output:<br>![image](https://user-images.githubusercontent.com/87934584/173816906-e0c7944b-2439-467f-94ec-f31fcef66887.png)<br>
 
