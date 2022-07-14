@@ -421,6 +421,27 @@ plt.show()<br>
 
 output:<br>![image](https://user-images.githubusercontent.com/87934584/178711943-dc482981-3b05-4c0a-b650-a160d6c6e34c.png)
 
+21.Analys the image using histogram?<br>
+import cv2<br>
+  
+/*importing library for plotting<br>
+from matplotlib import pyplot as plt<br>
+  
+/*reads an input image<br>
+img = cv2.imread('bike.jpg',0)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+
+/*find frequency of pixels in range 0-255<br>
+histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
+
+/*show the plotting graph of an image<br>
+plt.plot(histr)
+plt.show()<br>
+
+Output:![image](https://user-images.githubusercontent.com/87934584/178972756-eb6450e7-2059-4edc-aecf-2eb15d6aa530.png)<br>
+![image](https://user-images.githubusercontent.com/87934584/178972785-d5ceddc6-d792-4bea-a18b-3ac9366bf8b1.png)
+
 
 
 
