@@ -439,7 +439,7 @@ histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
 plt.plot(histr)
 plt.show()<br>
 
-Output:![image](https://user-images.githubusercontent.com/87934584/178972756-eb6450e7-2059-4edc-aecf-2eb15d6aa530.png)<br>
+Output:<br>![image](https://user-images.githubusercontent.com/87934584/178972756-eb6450e7-2059-4edc-aecf-2eb15d6aa530.png)<br>
 ![image](https://user-images.githubusercontent.com/87934584/178972785-d5ceddc6-d792-4bea-a18b-3ac9366bf8b1.png)
 
 
