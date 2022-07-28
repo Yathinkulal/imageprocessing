@@ -443,6 +443,10 @@ Output:<br>![image](https://user-images.githubusercontent.com/87934584/178972756
 ![image](https://user-images.githubusercontent.com/87934584/178972785-d5ceddc6-d792-4bea-a18b-3ac9366bf8b1.png)
 
 
+22.Program to perform basic image data anaysis using intensity Transfromation?
+a.Image neagtive
+b.Log transformation
+c.Gamma correction
 
 
 
