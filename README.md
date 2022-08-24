@@ -480,3 +480,35 @@ printPattern(n);
 output:
 ![image](https://user-images.githubusercontent.com/87934584/186389738-5e7fdd97-19a9-4a7b-b6e5-ca763b6962f2.png)
 
+24.Program to generate matrix to image
+from PIL import Image
+import numpy as np
+from matplotlib import pyplot as plt
+w, h = 512, 512
+data = np.zeros((h, w, 3), dtype=np.uint8)
+data[0:100, 0:100] = [255, 0, 0]
+data[100:200, 100:200] = [255, 0, 255]
+data[200:300, 200:300] = [0, 255, 0]
+img = Image.fromarray(data, 'RGB')
+img.save('my.png')
+plt.imshow(img)
+plt.show()
+from PIL import Image
+import numpy as np
+w, h = 600, 600
+data = np.zeros((h, w, 3), dtype=np.uint8)
+data[0:100, 0:100] = [255, 0, 0]
+data[100:200, 100:200] = [255, 0, 255]
+data[200:300, 200:300] = [0, 255, 0]
+data[300:400,300:400]=[0,0,255]
+data[400:500,400:500]=[255,255,0]
+data[500:600,500:600]=[0,255,255]
+img = Image.fromarray(data, 'RGB')
+img.save('my.png')
+plt.imshow(img)
+plt.show()
+
+Output:![image](https://user-images.githubusercontent.com/87934584/186398070-d182d24e-5feb-463b-9346-d03580fd016b.png)
+<br>
+![image](https://user-images.githubusercontent.com/87934584/186398129-f5acfa56-f204-4da3-8c24-7e5ce245a96e.png)
+
