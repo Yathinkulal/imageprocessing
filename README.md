@@ -501,3 +501,53 @@ Output:
 <br>
 ![image](https://user-images.githubusercontent.com/87934584/186398129-f5acfa56-f204-4da3-8c24-7e5ce245a96e.png)
 
+26.
+#Min&max<br>
+
+from numpy import asarray<br>
+from PIL import Image<br>
+image = Image.open('1.jpg')<br>
+pixels = asarray(image)<br>
+#print('Data Type: %s' % pixels.dtype)<br>
+print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
+pixels = pixels.astype('float32')<br>
+pixels /= 255.0<br>
+print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))<br>
+
+#average<br>
+
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread("bike.jpg",0)<br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
+plt.imshow(img)<br>
+np.average(img)<br>
+
+#standard deviation<br>
+<br>
+from PIL import Image,ImageStat<br>
+import matplotlib.pyplot as plt<br>
+im=Image.open('1.jpg')<br>
+plt.imshow(im)<br>
+plt.show()<br>
+stat=ImageStat.Stat(im)<br>
+print(stat.stddev)<br>
+#max image<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('1.jpg' )<br>
+plt.imshow(img)<br>
+plt.show()<br>
+max_channels = np.amax([np.amax(img[:,:,0]), np.amax(img[:,:,1]),np.amax(img[:,:,2])])<br>
+print(max_channels)<br>
+#min image<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('1.jpg' )<br>
+plt.imshow(img)
+plt.show()
+min_channels = np.amin([np.min(img[:,:,0]), np.amin(img[:,:,1]),np.amin(img[:,:,2])])
+print(min_channels)<br>
