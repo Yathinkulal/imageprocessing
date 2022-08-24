@@ -449,4 +449,38 @@ b.Log transformation
 c.Gamma correction
 
 
+23.program for printing the rectangular pattern Function to print the pattern?
+ def printPattern(n):
 
+    arraySize = n * 2 - 1;
+    result = [[0 for x in range(arraySize)]
+                 for y in range(arraySize)];
+        
+    #Fill the values<br>
+    for i in range(arraySize):
+        for j in range(arraySize):
+            if(abs(i - (arraySize // 2)) >
+               abs(j - (arraySize // 2))):
+                result[i][j] = abs(i - (arraySize // 2));
+            else:
+                result[i][j] = abs(j - (arraySize // 2));
+            
+    #Print the array<br>
+    for i in range(arraySize):
+        for j in range(arraySize):
+            print(result[i][j], end = " ");
+        print("");
+ 
+ #Driver Code<br>
+n = 4;
+ 
+printPattern(n);
+
+output:
+3 3 3 3 3 3 3 
+3 2 2 2 2 2 3 
+3 2 1 1 1 2 3 
+3 2 1 0 1 2 3 
+3 2 1 1 1 2 3 
+3 2 2 2 2 2 3 
+3 3 3 3 3 3 3
