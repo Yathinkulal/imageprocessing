@@ -480,33 +480,33 @@ printPattern(n);
 output:
 ![image](https://user-images.githubusercontent.com/87934584/186389738-5e7fdd97-19a9-4a7b-b6e5-ca763b6962f2.png)
 
-24.Program to generate matrix to image
-from PIL import Image
-import numpy as np
-from matplotlib import pyplot as plt
-w, h = 512, 512
-data = np.zeros((h, w, 3), dtype=np.uint8)
-data[0:100, 0:100] = [255, 0, 0]
-data[100:200, 100:200] = [255, 0, 255]
-data[200:300, 200:300] = [0, 255, 0]
-img = Image.fromarray(data, 'RGB')
-img.save('my.png')
-plt.imshow(img)
-plt.show()
-from PIL import Image
-import numpy as np
-w, h = 600, 600
-data = np.zeros((h, w, 3), dtype=np.uint8)
-data[0:100, 0:100] = [255, 0, 0]
-data[100:200, 100:200] = [255, 0, 255]
-data[200:300, 200:300] = [0, 255, 0]
-data[300:400,300:400]=[0,0,255]
-data[400:500,400:500]=[255,255,0]
-data[500:600,500:600]=[0,255,255]
-img = Image.fromarray(data, 'RGB')
-img.save('my.png')
-plt.imshow(img)
-plt.show()
+24.Program to generate matrix to image<br>
+from PIL import Image<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+w, h = 512, 512<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:100, 0:100] = [255, 0, 0]<br>
+data[100:200, 100:200] = [255, 0, 255]<br>
+data[200:300, 200:300] = [0, 255, 0]<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('my.png')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+from PIL import Image<br>
+import numpy as np<br>
+w, h = 600, 600<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:100, 0:100] = [255, 0, 0]<br>
+data[100:200, 100:200] = [255, 0, 255]<br>
+data[200:300, 200:300] = [0, 255, 0]<br>
+data[300:400,300:400]=[0,0,255]<br>
+data[400:500,400:500]=[255,255,0]<br>
+data[500:600,500:600]=[0,255,255]<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('my.png')<br>
+plt.imshow(img)<br>
+plt.show()<br>
 
 Output:![image](https://user-images.githubusercontent.com/87934584/186398070-d182d24e-5feb-463b-9346-d03580fd016b.png)
 <br>
