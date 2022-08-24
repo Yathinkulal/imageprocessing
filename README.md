@@ -449,7 +449,8 @@ b.Log transformation
 c.Gamma correction
 
 
-23.program for printing the rectangular pattern Function to print the pattern?
+23.program for printing the rectangular pattern Function to print the pattern?<br>
+ 
  def printPattern(n):
 
     arraySize = n * 2 - 1;
@@ -477,10 +478,5 @@ n = 4;
 printPattern(n);
 
 output:
-3 3 3 3 3 3 3 
-3 2 2 2 2 2 3 
-3 2 1 1 1 2 3 
-3 2 1 0 1 2 3 
-3 2 1 1 1 2 3 
-3 2 2 2 2 2 3 
-3 3 3 3 3 3 3
+![image](https://user-images.githubusercontent.com/87934584/186389738-5e7fdd97-19a9-4a7b-b6e5-ca763b6962f2.png)
+
