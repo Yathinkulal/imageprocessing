@@ -497,7 +497,7 @@ img.save('my.png')<br>
 plt.imshow(img)<br>
 plt.show()<br>
 
-Output:![image](https://user-images.githubusercontent.com/87934584/186398070-d182d24e-5feb-463b-9346-d03580fd016b.png)
+Output:
 <br>
 ![image](https://user-images.githubusercontent.com/87934584/186398129-f5acfa56-f204-4da3-8c24-7e5ce245a96e.png)
 
